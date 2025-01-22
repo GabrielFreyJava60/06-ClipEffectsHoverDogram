@@ -1,0 +1,139 @@
+body{
+    background: url(../images/the-tile-plug-in-2704402.svg);
+}
+.meal img {
+    transition: filter 0.3s ease;
+  }
+.meal img:hover {
+    filter: blur(5px);
+  }
+figure,ul {
+    padding: 0;
+    margin: 0;
+}
+html {
+    font-size: 62.5%;
+}
+h2 {
+    margin: 0;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.detailed--item_image{
+    width: 50rem;
+    height: 26rem;
+    object-fit: cover;
+    display: block;
+    position: absolute;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    top:0;
+    right: 0;
+}
+
+.detailed--title {
+    font-size: 2.5rem;
+    background-color: rgb(219, 214, 78);
+    text-align: center;
+    width: 30rem;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    border-radius: 40px;
+    
+}
+
+.detailed--item {
+    position: relative;
+    width: 35rem;
+    height: 26rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+}
+
+.gallery--item_image {
+    width:14rem;
+    height:14rem;
+    object-fit: cover;
+}
+.gallery {
+    list-style: none;
+    max-height: 55vh;
+    overflow: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 1rem;
+}
+.gallery--item_title {
+    display: block;
+    
+    font-size: 2.5rem;
+    background-color: #d16c23;
+    text-align: center;
+}
+.gallery--item_image {
+    display: block;
+    
+   
+}
+
+.gallery--item {
+    border: 2px solid rgb(193, 28, 28);
+    border-radius: 40px;
+    overflow: hidden;
+    width: 14rem;
+    margin-top: 10px;
+    flex-shrink: 0;
+}
+.logo {
+    font-size: 4rem;
+    text-align: center;
+    background-color: rgb(233, 231, 222);
+    border-radius: 40px;
+}
+
+@media screen and (orientation: landscape) {
+    .container {
+        flex-direction: row;
+        height: 80vh;
+        align-items: center;
+    }
+    .gallery {
+        order: -1;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        display: flex;
+    }
+    .gallery--item_image {
+        width:20rem;
+        height:20rem;
+    }
+    .gallery--item {
+        width: 19rem;
+    }
+    .gallery {
+        align-self: flex-start;
+        max-height: 85vh;
+    }
+
+}
+
+    @media screen and (orientation: landscape) and (min-width: 1024px){
+       .detailed--item {
+        width: 70rem;
+        height: 52rem;
+       }
+       .detailed--item_image {
+        width: 75rem;
+        height: 50rem;
+       }
+
+       .detailed--title {
+        font-size: 5rem;
+        width: 60rem;
+       }
+}
